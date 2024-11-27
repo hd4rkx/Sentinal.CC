@@ -70,7 +70,7 @@ local Tabs = {
 }
 
 
-Library:SetWatermarkVisibility(true)
+Library:SetWatermarkVisibility(false)
 
 
 local FrameTimer = tick()
@@ -86,7 +86,7 @@ local WatermarkConnection = game:GetService('RunService').RenderStepped:Connect(
         FrameCounter = 0;
     end;
 
-    Library:SetWatermark(('Psalms.Tech | %s fps | %s ms'):format(
+    Library:SetWatermark(('S0ulZ.Tech | %s fps | %s ms'):format(
         math.floor(FPS),
         math.floor(game:GetService('Stats').Network.ServerStatsItem['Data Ping']:GetValue())
     ));
