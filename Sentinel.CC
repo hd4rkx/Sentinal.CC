@@ -17,7 +17,7 @@ wait(1)
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 local Window = Library:CreateWindow({
-    Title = 'Sentinal.CC',
+    Title = 'Sentinel.CC',
     Center = true,
     AutoShow = true,
 })
@@ -86,7 +86,7 @@ local WatermarkConnection = game:GetService('RunService').RenderStepped:Connect(
         FrameCounter = 0;
     end;
 
-    Library:SetWatermark(('Sentinal.CC | %s fps | %s ms'):format(
+    Library:SetWatermark(('Sentinel.CC | %s fps | %s ms'):format(
         math.floor(FPS),
         math.floor(game:GetService('Stats').Network.ServerStatsItem['Data Ping']:GetValue())
     ));
